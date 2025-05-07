@@ -9,7 +9,6 @@ function Register({ onRegister, goToLogin }) {
   const handleRegister = (e) => {
     e.preventDefault();
 
-    // Validación simple
     if (!name || !phone || !email || !password) {
       alert("Por favor, complete todos los campos.");
       return;
@@ -20,10 +19,10 @@ function Register({ onRegister, goToLogin }) {
       phone,
       email,
       password,
-      role: 'user' // por defecto, usuario normal
+      role: 'user' 
     };
 
-    onRegister(newUser); // Pasar el nuevo usuario al componente principal
+    onRegister(newUser); 
   };
 
   return (

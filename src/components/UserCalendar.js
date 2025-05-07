@@ -7,7 +7,7 @@ const UserCalendar = ({ user }) => {
 
   return (
     <div style={styles.container}>
-      {/* Lado izquierdo: datos del usuario */}
+      
       <div style={styles.sidebar}>
         <h3>Datos del usuario</h3>
         <p><strong>Nombre:</strong> {user.name}</p>
@@ -17,7 +17,7 @@ const UserCalendar = ({ user }) => {
         <p><strong>Estatus:</strong> {user.password}</p>
       </div>
 
-      {/* Lado derecho: calendario */}
+      
       <div style={styles.calendarBox}>
         <h3>Calendario</h3>
         <Calendar
